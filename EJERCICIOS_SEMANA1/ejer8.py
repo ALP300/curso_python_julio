@@ -1,26 +1,29 @@
 '''
 13. Evaluación de estudiantes:
-Dado un array de estudiantes (nombre, notas[]), calcula el promedio individual y
+Dado un array de estudiantes (nombre, notas[]), 
+calcula el promedio individual y
 muestra los que aprobaron (promedio ≥ 11) y su 
 mención (suficiente, bueno, excelente).
 '''
+
 def evaluar_estudiantes():
     estudiantes=[
-        {"nombre":"Leo", "notas":[11,12,20,12]},
-        {"nombre":"Gustavo", "notas":[18,13,20,17] }, 
-        { "nombre":"Beckan", "notas":[17,14,20,12]}
+        {"nombre": "Leo", "notas":[16,14,17,13]},
+        {"nombre": "Nicolás", "notas":[17,12,16,13]},
+        {"nombre": "Ramon","notas":[12,15,16,17]},
+        {"nombre": "Juan","notas":[14,17,12,13]},
     ]
-    print("Resultados de la evalaución: ")
+    print("Resultados de la evaluación")
     for estudiante in estudiantes:
-        promedio= sum(estudiante["notas"])/ len(estudiante["notas"])
+        promedio= sum(estudiante["notas"])/len(estudiante["notas"])
         if promedio>=11:
-            mensaje= "suficiente"
+            mensaje="Suficiente"
             if promedio>=16:
-                mensaje="excelente"
+                mensaje="Excelente"
             elif promedio>=14:
-                mensaje="bueno"
-            print(f"{estudiante["nombre"]:}: Aprobado: Promedio: {promedio}. Mención: {mensaje}")
+                mensaje="Bueno"
+            
+            print(f"{estudiante["nombre"]}.APROBADO: Promedio: {promedio}.Mensaje {mensaje}")
 
 evaluar_estudiantes()
-
 
