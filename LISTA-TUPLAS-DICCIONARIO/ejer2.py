@@ -1,13 +1,7 @@
-coordenadas= (10,20)
-numeros=[1,2,3,4,5]
-colores=("rojo","verde","azul","rojo")
-un_elemento=(10,)
-print(colores[1])
-indice= colores.index("azul")
+coordenadas=(5,6)
+numeros=[2,3,4,5]
+colores=("rojo","verde","amarillo","rojo","rojo","morado")
+indice= colores.index("morado")
 conteo= colores.count("rojo")
-lista_colores= list(colores)
-tupla_numeros= tuple(numeros)
-print(tupla_numeros)
-print(lista_colores)
-print(indice)
 print(conteo)
+print(indice)

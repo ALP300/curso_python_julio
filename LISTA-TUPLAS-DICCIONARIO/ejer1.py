@@ -1,21 +1,22 @@
+'''
+LISTAS
+'''
 frutas= ["manzana","banana","naranja"]
-numeros=[1,2,3,4,5]
-mezcla=[1,"hola",4.343]
+numeros=[1,2,43,4,24]
+mezcla= [1,"hola",4,5.345]
+
 frutas[1]="pera"
-frutas.append("uva")
-ordenada= sorted(frutas)
 frutas.insert(1,"Kiwi")
 frutas.remove("naranja")
+a= numeros[1:5]
+b= numeros[:4]
+c= numeros[4:]
+d= numeros[-2:]
+frutas.append("uva")
 ultimo= frutas.pop()
-longitud= len(numeros)
-sub_lista= numeros[1:5]
-primeros= numeros[:3]
-ultimos= numeros[-2:]
-print(ultimos)
-print(primeros)
-print(ordenada)
-print(longitud)
-print(frutas[0])
-print(mezcla[2])
-print(sub_lista)
+
+print(a)
+print(b)
+print(frutas)
+print(ultimo)
 print(frutas)
